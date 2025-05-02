@@ -1,0 +1,116 @@
+:root {
+    --cor-de-fundo:#e2c1b6;
+    --botao: #921A40;
+    --cor-fundo2: #D9ABAB;
+    --detalhes:#C75B7A;
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    margin: 0%;
+}
+header{
+    display: flex;
+    width:100%;
+    justify-content: center;
+    justify-self: start;
+    background-color: var(--cor-fundo2);
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+
+}
+#container{
+    margin: 10px;
+    display: flex;
+    border-radius:10px ;
+    padding: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.h1{
+    display: flex;
+    font-size: x-large;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+}
+button a{
+    color: black;
+    
+}
+button{
+    background-color: var(--botao);
+    display: flex;
+    border: none;
+    height: 60px;
+    width: 130px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    font-size: large;
+}
+
+button:hover {
+    background-color: var(--detalhes);
+    color: var(--cor-fundo2) ;
+  }
+
+footer{
+    position: fixed;
+    bottom: 0;
+    background-color: var(--detalhes);
+    width: 100%;
+    text-align: center;
+    margin: 0%;
+}
+
+menu-disciplina{
+display: inline-block;
+width: 20%;
+}
+
+
+.botao{
+    cursor: pointer;
+    font-size: 2rem;
+    background: none;
+    background-color: var(--botao);
+    border: none;
+    padding: 1.05rem 1.05rem;
+    color: black;
+   
+}
+
+
+#menu-toggle{
+    display: none;
+}
+lista-vertical{
+    display:none;
+    position: absolute;
+    background-color: var(--detalhes);
+    box-shadow: 0 2px 5px var(--detalhes);
+    min-width: 190px;
+    z-index: 1;
+    left: 1rem;
+    top: 100%;
+}
+lista-vertical a{
+    color: black;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+}
+.lista-vertical a:hover{
+    background-color: var(--cor-fundo2);
+}
+#menu-toggle:checked ~ .lista-vertical:hover{
+    display: block;
+}
+#menu-toggle:checked + .botao{
+    background-color: black;
+}
