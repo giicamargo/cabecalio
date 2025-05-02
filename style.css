@@ -1,8 +1,8 @@
 :root {
-    --cor-de-fundo:#e2c1b6;
-    --botao: #921A40;
-    --cor-fundo2: #D9ABAB;
-    --detalhes:#C75B7A;
+    --cor-de-fundo:#8cd6ec;
+    --botao: #5d72ee;
+    --cor-fundo2: #86bfe5;
+    --detalhes:#4bb2c0;
 }
 
 body{
@@ -37,7 +37,7 @@ header{
     justify-content: center;
 }
 button a{
-    color: black;
+    color: rgb(5, 187, 243);
     
 }
 button{
@@ -79,7 +79,7 @@ width: 20%;
     background-color: var(--botao);
     border: none;
     padding: 1.05rem 1.05rem;
-    color: black;
+    color: rgb(96, 157, 248);
    
 }
 
@@ -98,7 +98,7 @@ lista-vertical{
     top: 100%;
 }
 lista-vertical a{
-    color: black;
+    color: rgb(54, 158, 228);
     padding: 0.75rem 1rem;
     text-decoration: none;
     font-size: 2rem;
@@ -112,5 +112,5 @@ lista-vertical a{
     display: block;
 }
 #menu-toggle:checked + .botao{
-    background-color: black;
+    background-color: rgb(74, 137, 253);
 }
